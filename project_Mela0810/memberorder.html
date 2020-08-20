@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.min.js"></script>
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- Bootstrap 4 CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!-- Bootstrap 4 JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <!-- WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <!-- Jquery -->
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <!-- JS -->
+  <script src="./js/all.js"></script>
+  <!-- 字型 jf-openhuninn-1.1 -->
+  <link rel="stylesheet" href="font/jf-openhuninn-1.1.ttf">
+    <!-- css引用MelaStyle.css -->
+    <link rel="stylesheet" href="./css/MelaStyle.css">
+    <link rel="stylesheet" href="./css/memberindexCH.css">
+    <title>會員中心 訂單查詢</title>
+</head>
+<body>
+    <!-- 導覽列 -->
+    <!-- header -->
+    <!-- logo -->
+    <nav class="fixed-top wow fadeInDown">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./img/MELA_logo.svg">
+            </a>
+        </div>
+        <!-- 選單 -->
+        <ul class="nav float-right align-items-center" style="z-index: 99;"> 
+            <li class="nav-item">
+                <div>
+                    <a class="nav-link nav-menu" href="./originplace.html">
+                        蔬果產地<br>
+                        About
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div>
+                    <a class="nav-link nav-menu" href="./shop.html">
+                        方案訂閱<br>
+                        shop
+                    </a>
+                </div>
+            </li> 
+            <li class="nav-item">
+                <div>
+                    <a class="nav-link nav-menu" href="./event.html">
+                        小農體驗<br>
+                        Experience
+                    </a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div>
+                    <a class="nav-link" href="./memberlogin.html">
+                        <div>
+                            <button class="btnMela">登入/註冊</button>
+                        </div>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <a href="#" class="showmenu">menu</a>
+    </nav>
+    <div class="wrap">
+        <div class="container">
+            <div class="controltable">
+                <img src="img/member_icon.png" width="100px">
+                <li><h3>Hello! 曉明</h3></li>
+                <li><h4>memberID</h4></li>
+                <button class="btnMela">登出</button>
+            </div>
+            
+            <!-- 切換頁籤 -->
+            <div class="tablewrap">
+                <div class="tabletag">
+                    <div class="order"><a href="/memberorder.html"><h6>訂單查詢</h6></a></div>
+                    <div class="event"><a href="/memberevent.html"><h6>活動報名</h6></a></div>
+                    <div class="member"><a href="/memberedit.html"><h6>會員資料</h6></a></div>
+                    <div class="password"><a href="/memberpas.html"><h6>修改密碼</h6></a></div>
+                </div>
+            <!-- 訂單查詢表格 -->
+                <div class="tableinfoorder">
+                    <div class="tableinfotag">
+                        <h4>訂單查詢</h4>
+                    </div>
+                    <table class="table  table-hover">
+                        <thead>
+                          <tr>
+                            <th>訂單編號</th>
+                            <th>訂購日期</th>
+                            <th>付款方式</th>
+                            <th>訂購方案</th>
+                            <th>方案數量</th>
+                            <th>訂購金額</th>
+                            <th>訂單進度</th>
+    
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>193847</td>
+                            <td>2020/08/01</td>
+                            <td>信用卡</td>
+                            <td>體驗箱</td>
+                            <td>單次</td>
+                            <td>NT899</td>
+                            <td>訂單處理中</td>
+                          </tr>
+                          <tr>
+                            <td>193847</td>
+                            <td>2020/08/01</td>
+                            <td>信用卡</td>
+                            <td>樂活箱</td>
+                            <td>每月</td>
+                            <td>NT799</td>
+                            <td>每月配送中</td>
+                          </tr>
+                          <tr>
+                            <td>193847</td>
+                            <td>2020/08/01</td>
+                            <td>信用卡</td>
+                            <td>森活箱</td>
+                            <td>每月</td>
+                            <td>NT1099</td>
+                            <td>配送完畢</td>
+                        </tbody>
+                      </table>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <!-- 頁尾 -->
+    <!-- <div class="footer wow fadeInUp">
+        <div class="footerimg">
+            <img src="img/footerbackground1.png">
+            <div class="footerlink">
+                <a href=""><h5>聯絡我們</h5></a>
+                <a href=""><h5>聯絡我們</h5></a> 
+                <a href=""><h5>聯絡我們</h5></a>
+                <a href=""><h5>聯絡我們</h5></a>
+                <a href=""><h5>聯絡我們</h5></a>
+            </div>
+        </div>
+    </div> -->
+    <script>
+        // 點order頁籤
+        $(".order").css("background-color","#8FC31F");
+        $(".order a").css("color","white");
+    </script>
+</body>
+</html>
